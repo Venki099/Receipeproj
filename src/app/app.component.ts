@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  loadedfeature = 'recipe'
+  onFeatureSelected(feature:string){
+    console.log("klip",feature);
+    this.loadedfeature = feature;
+  }
 }
